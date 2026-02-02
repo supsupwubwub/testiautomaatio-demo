@@ -1,0 +1,27 @@
+name: Testaus
+
+# Määritellään milloin tämä ajetaan:
+# 1. Kun koodia pushataan
+# 2. Kun tehdään Pull Request main-haaraan
+on:
+  push:
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    
+    steps:
+    # 1. Haetaan koodi reposta virtuaalikoneelle
+    - uses: actions/checkout@v4
+    
+    # 2. Asennetaan Python
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.10'
+        
+    # 3. Ajetaan testi
+    - name: Aja testit
+      run: python test_laskin.py
