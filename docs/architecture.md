@@ -7,24 +7,22 @@ Testit on jaettu kolmeen tasoon:
 3. **E2E-testit (Playwright):** Käyttäjäpolut selaimessa.
 
 ## CI/CD Putki (Workflow)
-```mermaid
+
+<pre class="mermaid">
 graph LR
     A[Koodin Push] --> B(GitHub Actions)
     B --> C{Testit läpi?}
     C -->|Kyllä| D[Deploy Stage]
     C -->|Ei| E[Ilmoitus tiimille]
+</pre>
 
-### 4. Käyttöönotto: `docs/setup.md`
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: true, theme: 'default' });
+</script>
+
+---
+## 4. Käyttöönotto
 Tämä on tärkein tiedosto arvosanan kannalta (että ope saa testit pyörimään).
 
-```markdown
-# Käyttöönotto-ohje
-
-## Esivaatimukset
-- Node.js (v18 tai uudempi)
-- npm
-
-## Asennus
-```bash
-npm install
-npx playwright install
+👉 **[Lue asennusohje täältä](./setup.md)**
