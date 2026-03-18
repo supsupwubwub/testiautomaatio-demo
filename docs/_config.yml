@@ -1,7 +1,10 @@
-theme: jekyll-theme-minimal
+remote_theme: just-the-docs/just-the-docs
 title: Testiautomaatio-Demo 2026
-description: Ohjelmistotuotannon kurssiprojekti. Testaus, arkkitehtuuri ja laatu samassa paketissa.
+description: Ohjelmistotuotannon kurssiprojekti.
 
-# Tämä lisää "View on GitHub" -napin automaattisesti sivupalkkiin
-github:
-  is_project_page: true
+# Aktivoidaan tumma tila (Full Dark Mode)
+color_scheme: dark
+
+# Navigointiasetukset
+nav_enabled: true
+footer_content: "© 2026 Supsupwubwub - SE Course"
