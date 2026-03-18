@@ -1,3 +1,14 @@
-theme: jekyll-theme-architect
+theme: jekyll-theme-dinky
 title: Testiautomaatio-Demo 2026
-description: Projektin tekninen dokumentaatio ja arkkitehtuurikuvaus.
+description: >
+  Ohjelmistotuotannon kurssiprojekti.
+  <br><br>
+  <strong>Navigointi:</strong><br>
+  • [Etusivu](./index.md)<br>
+  • [Arkkitehtuuri](./architecture.md)<br>
+  • [Asennusohje](./setup.md)<br>
+  • [Vaatimukset](./requirements.md)
+
+# Tämä lisää "View on GitHub" -napin automaattisesti sivupalkkiin
+github:
+  is_project_page: true
